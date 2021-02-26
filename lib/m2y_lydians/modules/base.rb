@@ -13,12 +13,18 @@ module M2yLydians
 
     def self.post(url, body, headers = nil)
       headers = base_headers if headers.nil?
-      HTTParty.post(url, headers: headers, body: body)
+      puts url.to_s
+      response = HTTParty.post(url, headers: headers, body: body)
+      puts response
+      response
     end
 
     def self.get(url, headers = nil)
       headers = base_headers if headers.nil?
-      HTTParty.get(url, headers)
+      puts url.to_s
+      response = HTTParty.get(url, headers)
+      puts response
+      response
     end
   end
 end
