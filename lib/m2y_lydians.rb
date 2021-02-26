@@ -1,6 +1,15 @@
-require "m2y_lydians/version"
+# frozen_string_literal: true
+
+require 'm2y_lydians/configuration/configuration'
+require 'm2y_lydians/modules/base'
 
 module M2yLydians
-  class Error < StandardError; end
-  # Your code goes here...
+  def self.configuration
+    @configuration ||= Configuration.new
+  end
+
+  def self.configure
+    config = configuration
+    yield(config)
+  end
 end
