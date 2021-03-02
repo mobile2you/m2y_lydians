@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    m2y_lydians (0.1.0)
+    m2y_lydians (0.0.1)
       httparty
 
 GEM
