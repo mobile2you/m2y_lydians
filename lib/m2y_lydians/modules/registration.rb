@@ -19,5 +19,20 @@ module M2yLydians
     def self.update_access_password(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + UPDATE_ACCESS_PASSWORD_PATH, parsed_body(body))
     end
+
+    # /AtualizarPerguntasSeg_37
+    def self.save_security_questions(body)
+      post(base_url + BASE_AUTHENTICATOR_PATH + SAVE_SECURITY_QUESTIONS, parsed_body(body))
+    end
+
+    # /ValidarPerguntasSeg_37
+    def self.check_security_questions(body)
+      post(base_url + BASE_AUTHENTICATOR_PATH + CHECK_ACCESS_PASSWORD_PATH, parsed_body(body))
+    end
+
+    # /EnviarMensagemSMS_37
+    def self.send_sms
+      post(base_url + BASE_AUTHENTICATOR_PATH + SEND_SMS_PATH, parsed_body(body))
+    end
   end
 end
