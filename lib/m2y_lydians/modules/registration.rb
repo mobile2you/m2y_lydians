@@ -31,7 +31,7 @@ module M2yLydians
     end
 
     # /EnviarMensagemSMS_37
-    def self.send_sms
+    def self.send_sms(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + SEND_SMS_PATH, parsed_body(body))
     end
   end
