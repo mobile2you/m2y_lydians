@@ -33,7 +33,15 @@ module M2yLydians
     def self.format_response(original_response)
       original_response.body.force_encoding('UTF-8')
       response = original_response.parsed_response
-      response[:status_code] = original_response.code if response.is_a?(Hash)
+      if response.is_a?(Hash)
+        response[:status_code] = original_response.code
+      else
+        # Erro 503 retorna um html em parsed_response
+        status_code = response.include?('Error 503') ? 503 : 500
+        response = {}
+        response[:status_code] = status_code
+        response['Descricao'] = 'Houve um erro inesperado, tente novamente mais tarde'
+      end
       puts response
       response
     end
