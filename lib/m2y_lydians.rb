@@ -4,6 +4,7 @@ require 'm2y_lydians/configuration/configuration'
 require 'm2y_lydians/constants/constants'
 require 'm2y_lydians/modules/base'
 require 'm2y_lydians/modules/registration'
+require 'm2y_lydians/modules/account'
 
 module M2yLydians
   def self.configuration
