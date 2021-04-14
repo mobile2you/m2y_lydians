@@ -8,6 +8,9 @@ module M2yLydians
   SAVE_SECURITY_QUESTIONS_PATH = '/AtualizarPerguntasSeg_37'
   CHECK_SECURITY_QUESTIONS_PATH = '/ValidarPerguntasSeg_37'
   SEND_SMS_PATH = '/EnviarMensagemSMS_37'
+  TOKEN_SMS_PATH = '/EnviarCodigoSMS_37'
+  VALIDATE_TOKEN_SMS_PATH = '/ValidarCodigoSMS_37'
+
 
   # Account methods
   BASE_ACCOUNT_PATH = 'Coc.svc'
