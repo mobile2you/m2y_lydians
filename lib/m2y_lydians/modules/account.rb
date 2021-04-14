@@ -14,5 +14,10 @@ module M2yLydians
     def self.validate_token(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + VALIDATE_TOKEN_SMS_PATH, parsed_body(body))
     end
+
+    # /ContaSaldo_37
+    def self.get_balance(body)
+      post(base_url + BASE_ACCOUNT_PATH + BALANCE_PATH, parsed_body(body))
+    end
   end
 end
