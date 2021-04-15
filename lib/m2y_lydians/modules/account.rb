@@ -16,7 +16,7 @@ module M2yLydians
     end
 
     # /ContaSaldo_37
-    def self.get_balance(body)
+    def self.balance(body)
       post(base_url + BASE_ACCOUNT_PATH + BALANCE_PATH, parsed_body(body))
     end
   end
