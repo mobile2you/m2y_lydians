@@ -10,11 +10,11 @@ module M2yLydians
   SEND_SMS_PATH = '/EnviarMensagemSMS_37'
   TOKEN_SMS_PATH = '/EnviarCodigoSMS_37'
   VALIDATE_TOKEN_SMS_PATH = '/ValidarCodigoSMS_37'
-  
-  
+
   # Account methods
   BASE_ACCOUNT_PATH = 'Coc.svc'
   CREATE_ACCOUNT_PATH = '/IncluirCCDigital_37'
   LIST_ACCOUNTS_PATH = '/ListarCC_37'
   BALANCE_PATH = '/ContaSaldo_37'
+  LINK_CARD_PATH = '/CartDebAtivarCartao_37'
 end

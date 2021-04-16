@@ -9,7 +9,7 @@ module M2yLydians
     def self.send_token(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + TOKEN_SMS_PATH, parsed_body(body))
     end
-    
+
     # /ValidarCodigoSMS_37
     def self.validate_token(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + VALIDATE_TOKEN_SMS_PATH, parsed_body(body))
@@ -18,6 +18,11 @@ module M2yLydians
     # /ContaSaldo_37
     def self.balance(body)
       post(base_url + BASE_ACCOUNT_PATH + BALANCE_PATH, parsed_body(body))
+    end
+
+    # /CartDebAtivarCartao_37
+    def self.link_card(body)
+      post(base_url + BASE_ACCOUNT_PATH + LINK_CARD_PATH, parsed_body(body))
     end
   end
 end
