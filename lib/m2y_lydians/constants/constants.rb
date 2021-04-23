@@ -17,4 +17,5 @@ module M2yLydians
   LIST_ACCOUNTS_PATH = '/ListarCC_37'
   BALANCE_PATH = '/ContaSaldo_37'
   LINK_CARD_PATH = '/CartDebAtivarCartao_37'
+  DESTINATION_ACCOUNT_PATH = '/ContaConsTitular_37'
 end

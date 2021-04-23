@@ -24,5 +24,10 @@ module M2yLydians
     def self.link_card(body)
       post(base_url + BASE_ACCOUNT_PATH + LINK_CARD_PATH, parsed_body(body))
     end
+
+    # /ContaConsTitular_37
+    def self.destination_account(body)
+      post(base_url + BASE_ACCOUNT_PATH + DESTINATION_ACCOUNT_PATH, parsed_body(body))
+    end
   end
 end
