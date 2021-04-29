@@ -29,5 +29,10 @@ module M2yLydians
     def self.destination_account(body)
       post(base_url + BASE_ACCOUNT_PATH + DESTINATION_ACCOUNT_PATH, parsed_body(body))
     end
+
+    # /ContaDepBoleto_37
+    def self.generate_billet(body)
+      post(base_url + BASE_ACCOUNT_PATH + GENERATE_BILLET_PATH, parsed_body(body))
+    end
   end
 end
