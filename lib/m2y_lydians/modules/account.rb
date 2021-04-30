@@ -39,5 +39,10 @@ module M2yLydians
     def self.list_billet(body)
       post(base_url + BASE_ACCOUNT_PATH + LIST_BILLET_PATH, parsed_body(body))
     end
+
+    # /ContaPgtoTEF_37
+    def self.perform_p2p(body)
+      post(base_url + BASE_ACCOUNT_PATH + PERFORM_P2P_PATH, parsed_body(body))
+    end
   end
 end
