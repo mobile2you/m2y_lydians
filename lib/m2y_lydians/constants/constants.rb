@@ -19,4 +19,5 @@ module M2yLydians
   LINK_CARD_PATH = '/CartDebAtivarCartao_37'
   DESTINATION_ACCOUNT_PATH = '/ContaConsTitular_37'
   GENERATE_BILLET_PATH = '/ContaDepBoleto_37'
+  LIST_BILLET_PATH = '/ContaCartBoletos_37'
 end
