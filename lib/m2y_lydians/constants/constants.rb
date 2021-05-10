@@ -18,9 +18,18 @@ module M2yLydians
   BALANCE_PATH = '/ContaSaldo_37'
   LINK_CARD_PATH = '/CartDebAtivarCartao_37'
   DESTINATION_ACCOUNT_PATH = '/ContaConsTitular_37'
+
+  ### Billets ###
   GENERATE_BILLET_PATH = '/ContaDepBoleto_37'
   LIST_BILLET_PATH = '/ContaCartBoletos_37'
-  PERFORM_P2P_PATH = '/ContaPgtoTEF_37'
+  BILLET_PDF_PATH = '/ContaDepBoletoPDF_37'
+
+  ### Statement and receipts ###
   BANK_STATEMENT_PATH = '/ContaExtrato_37'
   RECEIPT_PATH = '/ContaExtratoDet_37'
+
+  ### Transactions ###
+  PERFORM_P2P_PATH = '/ContaPgtoTEF_37'
+  PERFORM_TED_PATH = '/ContaPgtoTED_37'
+  PERFORM_DOC_PATH = '/ContaPgtoDOC_37'
 end
