@@ -44,5 +44,15 @@ module M2yLydians
     def self.perform_p2p(body)
       post(base_url + BASE_ACCOUNT_PATH + PERFORM_P2P_PATH, parsed_body(body))
     end
+
+    # /ContaExtrato_37
+    def self.bank_statement(body)
+      post(base_url + BASE_ACCOUNT_PATH + BANK_STATEMENT_PATH, parsed_body(body))
+    end
+
+    # /ContaExtratoDet_37
+    def self.receipt(body)
+      post(base_url + BASE_ACCOUNT_PATH + RECEIPT_PATH, parsed_body(body))
+    end
   end
 end

@@ -21,4 +21,6 @@ module M2yLydians
   GENERATE_BILLET_PATH = '/ContaDepBoleto_37'
   LIST_BILLET_PATH = '/ContaCartBoletos_37'
   PERFORM_P2P_PATH = '/ContaPgtoTEF_37'
+  BANK_STATEMENT_PATH = '/ContaExtrato_37'
+  RECEIPT_PATH = '/ContaExtratoDet_37'
 end
