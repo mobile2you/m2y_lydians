@@ -30,6 +30,8 @@ module M2yLydians
       post(base_url + BASE_ACCOUNT_PATH + DESTINATION_ACCOUNT_PATH, parsed_body(body))
     end
 
+    ### BILLETS ###
+
     # /ContaDepBoleto_37
     def self.generate_billet(body)
       post(base_url + BASE_ACCOUNT_PATH + GENERATE_BILLET_PATH, parsed_body(body))
@@ -40,10 +42,12 @@ module M2yLydians
       post(base_url + BASE_ACCOUNT_PATH + LIST_BILLET_PATH, parsed_body(body))
     end
 
-    # /ContaPgtoTEF_37
-    def self.perform_p2p(body)
-      post(base_url + BASE_ACCOUNT_PATH + PERFORM_P2P_PATH, parsed_body(body))
+    # /ContaDepBoletoPDF_37
+    def self.billet_pdf(body)
+      post(base_url + BASE_ACCOUNT_PATH + BILLET_PDF_PATH, parsed_body(body))
     end
+
+    ### BANK STATEMENT & RECEIPTS ###
 
     # /ContaExtrato_37
     def self.bank_statement(body)
@@ -53,6 +57,23 @@ module M2yLydians
     # /ContaExtratoDet_37
     def self.receipt(body)
       post(base_url + BASE_ACCOUNT_PATH + RECEIPT_PATH, parsed_body(body))
+    end
+
+    ### TRANSACTIONS ###
+
+    # /ContaPgtoTEF_37
+    def self.perform_p2p(body)
+      post(base_url + BASE_ACCOUNT_PATH + PERFORM_P2P_PATH, parsed_body(body))
+    end
+
+    # /ContaPgtoTED_37
+    def self.perform_ted(body)
+      post(base_url + BASE_ACCOUNT_PATH + PERFORM_TED_PATH, parsed_body(body))
+    end
+
+    # /ContaPgtoDOC_37
+    def self.perform_doc(body)
+      post(base_url + BASE_ACCOUNT_PATH + PERFORM_DOC_PATH, parsed_body(body))
     end
   end
 end
