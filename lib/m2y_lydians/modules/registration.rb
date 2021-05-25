@@ -34,5 +34,10 @@ module M2yLydians
     def self.send_sms(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + SEND_SMS_PATH, parsed_body(body))
     end
+
+    # /ConsultarIdPositiva_37
+    def self.random_questions(body)
+      post(base_url + BASE_AUTHENTICATOR_PATH + RANDOM_QUESTIONS_PATH, parsed_body(body))
+    end
   end
 end
