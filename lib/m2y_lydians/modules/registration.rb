@@ -39,5 +39,10 @@ module M2yLydians
     def self.random_questions(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + RANDOM_QUESTIONS_PATH, parsed_body(body))
     end
+
+    # /ValidarIdPositiva_37
+    def self.check_random_answer(body)
+      post(base_url + BASE_AUTHENTICATOR_PATH + CHECK_RANDOM_ANSWER_PATH, parsed_body(body))
+    end
   end
 end
