@@ -38,4 +38,5 @@ module M2yLydians
   PERFORM_P2P_PATH = '/ContaPgtoTEF_37'
   PERFORM_TED_PATH = '/ContaPgtoTED_37'
   PERFORM_DOC_PATH = '/ContaPgtoDOC_37'
+  BANK_LIST_PATH = '/IFsConsultar_37'
 end
