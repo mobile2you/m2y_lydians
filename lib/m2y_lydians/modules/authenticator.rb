@@ -32,7 +32,7 @@ module M2yLydians
 
     # Aut.svc/AlterarSenhaTrans_37
     def self.create_transaction_password(body)
-      post(base_url + BASE_AUTHENTICATOR_PATH + CREATE_TRANSACTION_PASSWORD_PASS, parsed_body(body))
+      post(base_url + BASE_AUTHENTICATOR_PATH + CREATE_TRANSACTION_PASSWORD_PATH, parsed_body(body))
     end
 
     # Aut.svc/ValidarSenhaTrans_37
