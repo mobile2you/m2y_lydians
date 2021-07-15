@@ -39,5 +39,10 @@ module M2yLydians
     def self.check_transaction_password(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + CHECK_TRANSACTION_PASSWORD_PATH, parsed_body(body))
     end
+
+    # Aut.svc/ConsultarCredencial_37
+    def self.check_password_status(body)
+      post(base_url + BASE_AUTHENTICATOR_PATH + CHECK_PASSWORD_STATUS_PATH, parsed_body(body))
+    end
   end
 end

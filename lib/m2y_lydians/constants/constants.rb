@@ -13,6 +13,7 @@ module M2yLydians
   CHECK_RANDOM_ANSWER_PATH = '/ValidarIdPositiva_37'
   CREATE_TRANSACTION_PASSWORD_PATH = '/AlterarSenhaTrans_37'
   CHECK_TRANSACTION_PASSWORD_PATH = '/ValidarSenhaTrans_37'
+  CHECK_PASSWORD_STATUS_PATH = '/ConsultarCredencial_37'
 
   ### Account ###
   CREATE_ACCOUNT_PATH = '/IncluirCCDigital_37'
