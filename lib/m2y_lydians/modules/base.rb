@@ -15,7 +15,11 @@ module M2yLydians
       headers = base_headers if headers.nil?
       puts "Sending POST request to URL: #{url}"
       begin
-        response = HTTParty.post(url, headers: headers, body: body.to_json, debug_output: $stdout)
+        if M2yLydians.configuration.production?
+          response = HTTParty.post(url, headers: headers, body: body.to_json)
+        else
+          response = HTTParty.post(url, headers: headers, body: body.to_json, debug_output: $stdout)
+        end
       rescue Timeout::Error
         return timeout_response
       end
