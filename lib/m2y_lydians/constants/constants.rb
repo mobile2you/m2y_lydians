@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module M2yLydians
   ### Base paths ###
   BASE_AUTHENTICATOR_PATH = 'Aut.svc'
@@ -16,6 +18,7 @@ module M2yLydians
   CHECK_PASSWORD_STATUS_PATH = '/ConsultarCredencial_37'
 
   ### Account ###
+  GET_ACCOUNT_PATH = '/ClienteContas_37'
   CREATE_ACCOUNT_PATH = '/IncluirCCDigital_37'
   BALANCE_PATH = '/ContaSaldo_37'
   LINK_CARD_PATH = '/CartDebAtivarCartao_37'
