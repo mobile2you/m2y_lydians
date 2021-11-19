@@ -18,7 +18,7 @@ module M2yLydians
     end
 
     # Coc.svc/ContaIncluirLancto_37
-    def self.include_debt(body)
+    def self.include_debit(body)
       post(base_url + BASE_ACCOUNT_PATH + INCLUDE_DEBT_PATH, parsed_body(body))
     end
 
