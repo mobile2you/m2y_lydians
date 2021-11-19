@@ -17,6 +17,11 @@ module M2yLydians
       post(base_url + BASE_ACCOUNT_PATH + PERFORM_DOC_PATH, parsed_body(body))
     end
 
+    # Coc.svc/ContaIncluirLancto_37
+    def self.include_debt(body)
+      post(base_url + BASE_ACCOUNT_PATH + INCLUDE_DEBT_PATH, parsed_body(body))
+    end
+
     ### AUXILIARY METHODS ###
 
     # Glb.svc/IFsConsultar_37
