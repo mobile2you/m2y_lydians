@@ -22,6 +22,11 @@ module M2yLydians
       post(base_url + BASE_ACCOUNT_PATH + INCLUDE_DEBT_PATH, parsed_body(body))
     end
 
+    # Coc.svc/EstornarLancamento_37
+  def self.reverse_debit(body)
+    post(base_url + BASE_ACCOUNT_PATH + REVERSE_DEBT_PATH, parsed_body(body))
+  end
+
     ### AUXILIARY METHODS ###
 
     # Glb.svc/IFsConsultar_37
