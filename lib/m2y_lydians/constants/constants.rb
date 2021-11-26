@@ -45,5 +45,6 @@ module M2yLydians
   PERFORM_TED_PATH = '/ContaPgtoTED_37'
   PERFORM_DOC_PATH = '/ContaPgtoDOC_37'
   INCLUDE_DEBT_PATH = '/ContaIncluirLancto_37'
+  REVERSE_DEBT_PATH = '/EstornarLancamento_37'
   BANK_LIST_PATH = '/IFsConsultar_37'
 end
