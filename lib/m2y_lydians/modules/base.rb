@@ -58,6 +58,14 @@ module M2yLydians
       response[:status_code] = status_code
       response['Descricao'] = description if description.present?
 
+      begin
+        response[:original_request] = original_response.request.raw_body
+        response[:url] = original_response.request.uri
+      rescue StandardError
+        response[:original_request] = nil
+        response[:url] = nil
+      end
+
       puts response
       response
     end
