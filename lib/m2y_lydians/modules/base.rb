@@ -13,7 +13,7 @@ module M2yLydians
 
     def self.post(url, body, headers = nil)
       headers = base_headers if headers.nil?
-      puts "Sending POST request to URL: #{url}"
+      # puts "Sending POST request to URL: #{url}"
       begin
         if M2yLydians.configuration.production?
           response = HTTParty.post(url, headers: headers, body: body.to_json)
@@ -28,7 +28,7 @@ module M2yLydians
 
     def self.get(url, headers = nil)
       headers = base_headers if headers.nil?
-      puts "Sending GET request to URL: #{url}"
+      # puts "Sending GET request to URL: #{url}"
       begin
         response = HTTParty.get(url, headers)
       rescue Timeout::Error
@@ -66,7 +66,7 @@ module M2yLydians
         response[:url] = nil
       end
 
-      puts response
+      # puts response
       response
     end
 
