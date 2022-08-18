@@ -24,5 +24,10 @@ module M2yLydians
     def self.destination_account(body)
       post(base_url + BASE_ACCOUNT_PATH + DESTINATION_ACCOUNT_PATH, parsed_body(body))
     end
+
+    # Coc.svc/ContaEncerrar_37
+    def self.create_account(body)
+      post(base_url + BASE_ACCOUNT_PATH + CLOSE_ACCOUNT_PATH, parsed_body(body))
+    end
   end
 end
