@@ -46,12 +46,12 @@ module M2yLydians
     end
 
     # Aut.svc/BloquearSenhaAcesso_37
-    def self.check_password_status(body)
+    def self.block_app_password(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + BLOCK_APP_PASSWORD_PATH, parsed_body(body))
     end
 
     # Aut.svc/BloquearSenhaTrans_37
-    def self.check_password_status(body)
+    def self.block_transactional_password(body)
       post(base_url + BASE_AUTHENTICATOR_PATH + BLOCK_TRANSACTIONAL_PASSWORD_PATH, parsed_body(body))
     end
   end
