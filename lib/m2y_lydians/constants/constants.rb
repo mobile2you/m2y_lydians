@@ -16,6 +16,8 @@ module M2yLydians
   CREATE_TRANSACTION_PASSWORD_PATH = '/AlterarSenhaTrans_37'
   CHECK_TRANSACTION_PASSWORD_PATH = '/ValidarSenhaTrans_37'
   CHECK_PASSWORD_STATUS_PATH = '/ConsultarCredencial_37'
+  BLOCK_APP_PASSWORD_PATH = '/BloquearSenhaAcesso_37'
+  BLOCK_TRANSACTIONAL_PASSWORD_PATH = '/BloquearSenhaTrans_37'
 
   ### Account ###
   GET_ACCOUNT_PATH = '/ClienteContas_37'
