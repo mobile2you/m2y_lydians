@@ -1,10 +1,12 @@
 module M2yLydians
   class Configuration
-    attr_writer :server_url, :certification, :env
+    attr_writer :server_url, :pix_server_url, :certification, :pix_certification, :env
 
     def initialize
       @server_url = nil
+      @pix_server_url = nil
       @certification = nil
+      @pix_certification = nil
       @env = nil
     end
 
@@ -12,8 +14,16 @@ module M2yLydians
       @server_url
     end
 
+    def pix_server_url
+      @pix_server_url
+    end
+
     def certification
       @certification
+    end
+
+    def pix_certification
+      @pix_certification
     end
 
     def env

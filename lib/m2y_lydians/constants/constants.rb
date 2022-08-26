@@ -5,6 +5,7 @@ module M2yLydians
   BASE_AUTHENTICATOR_PATH = 'Aut.svc'
   BASE_ACCOUNT_PATH = 'Coc.svc'
   BASE_GLB_PATH = 'Glb.svc'
+  BASE_PIX_PATH = 'Pix.svc'
 
   ### Authenticator ###
   UPDATE_CREDENTIALS_PATH = '/AtualizarCredencial_37'
@@ -50,4 +51,7 @@ module M2yLydians
   INCLUDE_DEBT_PATH = '/ContaIncluirLancto_37'
   REVERSE_DEBT_PATH = '/EstornarLancamento_37'
   BANK_LIST_PATH = '/IFsConsultar_37'
+
+  ### PIX ###
+  KEYS_LIST_PATH = '/PIXChaveListar'
 end

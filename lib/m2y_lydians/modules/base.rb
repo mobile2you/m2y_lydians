@@ -4,10 +4,21 @@ module M2yLydians
       M2yLydians.configuration.server_url
     end
 
+    def self.pix_url
+      M2yLydians.configuration.pix_server_url
+    end
+
     def self.base_headers
       headers = {}
       headers['Content-Type'] = 'application/json'
       headers['LYD-Certificado'] = M2yLydians.configuration.certification
+      headers
+    end
+
+    def self.pix_headers
+      headers = {}
+      headers['Content-Type'] = 'application/json'
+      headers['LYD-Certificado'] = M2yLydians.configuration.pix_certification
       headers
     end
 
