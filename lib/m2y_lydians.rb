@@ -6,6 +6,7 @@ require 'm2y_lydians/modules/base'
 
 require 'm2y_lydians/modules/account'
 require 'm2y_lydians/modules/authenticator'
+require 'm2y_lydians/modules/pix'
 require 'm2y_lydians/modules/billet'
 require 'm2y_lydians/modules/sms'
 require 'm2y_lydians/modules/statement'
