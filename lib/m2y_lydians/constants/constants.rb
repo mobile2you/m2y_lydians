@@ -54,4 +54,5 @@ module M2yLydians
 
   ### PIX ###
   KEYS_LIST_PATH = '/PIXChaveListar'
+  KEY_CONSULT_PATH = '/PIXConsultar'
 end
