@@ -4,5 +4,9 @@ module M2yLydians
     def self.list_pix_keys(body)
       post(pix_url + BASE_PIX_PATH + KEYS_LIST_PATH, parsed_body(body), pix_headers)
     end
+
+    def self.register_pix_key(body)
+      post(pix_url + BASE_PIX_PATH + REGISTER_KEY_PATH, parsed_body(body), pix_headers)
+    end
   end
 end
