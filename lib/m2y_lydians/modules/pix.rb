@@ -8,5 +8,10 @@ module M2yLydians
     def self.register_pix_key(body)
       post(pix_url + BASE_PIX_PATH + REGISTER_KEY_PATH, parsed_body(body), pix_headers)
     end
+
+    # Pix.svc/PIXChaveExcluir
+    def self.delete_pix_key(body)
+      post(pix_url + BASE_PIX_PATH + DELETE_KEY_PATH, parsed_body(body), pix_headers)
+    end
   end
 end
