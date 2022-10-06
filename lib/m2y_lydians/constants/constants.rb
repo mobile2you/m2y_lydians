@@ -55,4 +55,5 @@ module M2yLydians
   ### PIX ###
   KEYS_LIST_PATH = '/PIXChaveListar'
   REGISTER_KEY_PATH = '/PIXChaveIncluir'
+  DELETE_KEY_PATH = '/PIXChaveExcluir'
 end
