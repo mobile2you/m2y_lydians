@@ -13,5 +13,10 @@ module M2yLydians
     def self.delete_pix_key(body)
       post(pix_url + BASE_PIX_PATH + DELETE_KEY_PATH, parsed_body(body), pix_headers)
     end
+
+    # Pix.svc/PIXConsultar
+    def self.search_pix_key(body)
+      post(pix_url + BASE_PIX_PATH + SEARCH_KEY_PATH, parsed_body(body), pix_headers)
+    end
   end
 end
