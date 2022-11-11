@@ -18,5 +18,10 @@ module M2yLydians
     def self.search_pix_key(body)
       post(pix_url + BASE_PIX_PATH + SEARCH_KEY_PATH, parsed_body(body), pix_headers)
     end
+
+    # Pix.svc/PIXTransferir_v2
+    def self.perform_pix(body)
+      post(pix_url + BASE_PIX_PATH + PERFORM_PIX_PATH, parsed_body(body), pix_headers)
+    end
   end
 end
