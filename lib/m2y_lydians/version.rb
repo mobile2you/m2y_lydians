@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module M2yLydians
-  VERSION = '1.4.0'
+  VERSION = '1.4.1'
 end
