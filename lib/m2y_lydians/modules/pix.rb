@@ -25,8 +25,8 @@ module M2yLydians
     end
 
     # Pix.svc/PIXParticipantes
-    def self.get_pix_banks(body)
-      post(pix_url + BASE_PIX_PATH + GET_PIX_BANKS, parsed_body(body), pix_headers)
+    def self.get_pix_banks
+      post(pix_url + BASE_PIX_PATH + GET_PIX_BANKS, pix_headers)
     end
   end
 end
