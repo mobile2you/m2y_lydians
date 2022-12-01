@@ -33,5 +33,41 @@ module M2yLydians
     def self.qrcode_decode(body)
       post(pix_url + BASE_PIX_PATH + QRCODE_DECODE, parsed_body(body), pix_headers)
     end
+
+    #Pix.svc/PIXRecReivListar
+    def self.received_claim_key_list(body)
+      post(pix_url + BASE_PIX_PATH + RECEIVED_KEY_CLAIM_LIST, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXRecReivConfirmar
+    def self.received_claim_key_confirm(body)
+      post(pix_url + BASE_PIX_PATH + RECEIVED_KEY_CLAIM_CONFIRM, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXRecReivCancelar
+    def self.received_claim_key_cancel(body)
+      post(pix_url + BASE_PIX_PATH + RECEIVED_KEY_CLAIM_CANCEL, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXSolReivCriar
+    def self.sent_claim_key_create(body)
+      post(pix_url + BASE_PIX_PATH + SENT_KEY_CLAIM_CREATE, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXSolReivListar
+    def self.sent_claim_key_list(body)
+      post(pix_url + BASE_PIX_PATH + SENT_KEY_CLAIM_LIST, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXSolReivConcluir
+    def self.sent_claim_key_conclude(body)
+      post(pix_url + BASE_PIX_PATH + SENT_KEY_CLAIM_CONCLUDE, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/PIXSolReivCancelar
+    def self.sent_claim_key_cancel(body)
+      post(pix_url + BASE_PIX_PATH + SENT_KEY_CLAIM_CANCEL, parsed_body(body), pix_headers)
+    end
+
   end
 end

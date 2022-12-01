@@ -60,4 +60,15 @@ module M2yLydians
   GET_PIX_BANKS = '/PIXParticipantes'
   PERFORM_PIX_PATH = '/PIXTransferir_v2'
   QRCODE_DECODE = '/PIXQRCodeConsultar_v2'
+
+  #PIX KEY CLAIMS RECEIVED
+  RECEIVED_KEY_CLAIM_LIST = '/PIXRecReivListar'
+  RECEIVED_KEY_CLAIM_CONFIRM = '/PIXRecReivConfirmar'
+  RECEIVED_KEY_CLAIM_CANCEL = '/PIXRecReivCancelar'
+
+  #PIX KEY CLAIMS SENT
+  SENT_KEY_CLAIM_CREATE = '/PIXSolReivCriar'
+  SENT_KEY_CLAIM_LIST = '/PIXSolReivListar'
+  SENT_KEY_CLAIM_CONCLUDE = '/PIXSolReivConcluir'
+  SENT_KEY_CLAIM_CANCEL = '/PIXSolReivCancelar'
 end
