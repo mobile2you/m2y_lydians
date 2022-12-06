@@ -35,7 +35,7 @@ module M2yLydians
     end
 
     # Coc.svc/ContaPgtoReprovar_37
-    def self.bank_list(body)
+    def self.cancel_transaction(body)
       post(base_url + BASE_ACCOUNT_PATH + CANCEL_SCHEDULED_TRANSACTION_PATH, parsed_body(body))
     end
   end
