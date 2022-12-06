@@ -51,6 +51,7 @@ module M2yLydians
   INCLUDE_DEBT_PATH = '/ContaIncluirLancto_37'
   REVERSE_DEBT_PATH = '/EstornarLancamento_37'
   BANK_LIST_PATH = '/IFsConsultar_37'
+  CANCEL_SCHEDULED_TRANSACTION_PATH = '/ContaPgtoReprovar_37'
 
   ### PIX ###
   KEYS_LIST_PATH = '/PIXChaveListar'
