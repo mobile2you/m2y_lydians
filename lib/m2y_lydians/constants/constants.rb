@@ -60,6 +60,7 @@ module M2yLydians
   SEARCH_KEY_PATH = '/PIXConsultar'
   GET_PIX_BANKS = '/PIXParticipantes'
   PERFORM_PIX_PATH = '/PIXTransferir_v2'
+  QRCODE_GENERATE_STATIC = '/PIXQRCodeGerarEstat'
   QRCODE_DECODE = '/PIXQRCodeConsultar_v2'
 
   #PIX KEY CLAIMS RECEIVED

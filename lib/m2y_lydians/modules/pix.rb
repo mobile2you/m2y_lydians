@@ -29,6 +29,11 @@ module M2yLydians
       post(pix_url + BASE_PIX_PATH + GET_PIX_BANKS, pix_headers)
     end
 
+    #Pix.svc/PIXQRCodeGerarEstat
+    def self.qrcode_generate_static(body)
+      post(pix_url + BASE_PIX_PATH + QRCODE_GENERATE_STATIC, parsed_body(body), pix_headers)
+    end
+
     #Pix.svc/PIXQRCodeConsultar_v2
     def self.qrcode_decode(body)
       post(pix_url + BASE_PIX_PATH + QRCODE_DECODE, parsed_body(body), pix_headers)
