@@ -24,6 +24,11 @@ module M2yLydians
       post(pix_url + BASE_PIX_PATH + PERFORM_PIX_PATH, parsed_body(body), pix_headers)
     end
 
+    # Pix.svc/PIXTransferir_v2
+    def self.return_pix(body)
+      post(pix_url + BASE_PIX_PATH + RETURN_PIX_PATH, parsed_body(body), pix_headers)
+    end
+
     # Pix.svc/PIXParticipantes
     def self.get_pix_banks
       post(pix_url + BASE_PIX_PATH + GET_PIX_BANKS, pix_headers)
