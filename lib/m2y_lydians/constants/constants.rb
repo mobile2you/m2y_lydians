@@ -74,4 +74,9 @@ module M2yLydians
   SENT_KEY_CLAIM_LIST = '/PIXSolReivListar'
   SENT_KEY_CLAIM_CONCLUDE = '/PIXSolReivConcluir'
   SENT_KEY_CLAIM_CANCEL = '/PIXSolReivCancelar'
+
+  #PIX FAVORITES
+  PIX_FAVORITES_LIST = '/FavPIXListar'
+  PIX_FAVORITES_CREATE = '/FavPIXSalvar'
+  PIX_FAVORITES_DELETE = '/FavPIXExcluir'
 end

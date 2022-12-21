@@ -79,5 +79,19 @@ module M2yLydians
       post(pix_url + BASE_PIX_PATH + SENT_KEY_CLAIM_CANCEL, parsed_body(body), pix_headers)
     end
 
+    #Pix.svc/FavPIXListar
+    def self.pix_favorite_list(body)
+      post(pix_url + BASE_PIX_PATH + PIX_FAVORITES_LIST, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/FavPIXSalvar
+    def self.pix_favorite_create(body)
+      post(pix_url + BASE_PIX_PATH + PIX_FAVORITES_CREATE, parsed_body(body), pix_headers)
+    end
+
+    #Pix.svc/FavPIXExcluir
+    def self.pix_favorite_delete(body)
+      post(pix_url + BASE_PIX_PATH + PIX_FAVORITES_DELETE, parsed_body(body), pix_headers)
+    end
   end
 end
