@@ -53,6 +53,9 @@ module M2yLydians
   BANK_LIST_PATH = '/IFsConsultar_37'
   CANCEL_SCHEDULED_TRANSACTION_PATH = '/ContaPgtoReprovar_37'
 
+  ### LIMITS ###
+  LIST_PIX_LIMITS = '/ContaLimiteCons_37'
+
   ### PIX ###
   KEYS_LIST_PATH = '/PIXChaveListar'
   REGISTER_KEY_PATH = '/PIXChaveIncluir'
