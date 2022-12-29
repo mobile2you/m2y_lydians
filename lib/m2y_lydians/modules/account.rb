@@ -29,5 +29,10 @@ module M2yLydians
     def self.close_account(body)
       post(base_url + BASE_ACCOUNT_PATH + CLOSE_ACCOUNT_PATH, parsed_body(body))
     end
+
+    # Coc.svc/ContaLimiteAlter_37
+    def self.set_transactional_limits(body)
+      post(base_url + BASE_ACCOUNT_PATH + SET_TRANSACIONAL_LIMITS_PATH, parsed_body(body))
+    end
   end
 end
