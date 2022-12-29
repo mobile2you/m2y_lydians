@@ -93,5 +93,10 @@ module M2yLydians
     def self.pix_favorite_delete(body)
       post(pix_url + BASE_PIX_PATH + PIX_FAVORITES_DELETE, parsed_body(body), pix_headers)
     end
+
+    # ContaLimiteCons_37
+    def self.pix_limits(body)
+      post(pix_url + BASE_ACCOUNT_PATH + LIST_PIX_LIMITS, parsed_body(body), pix_headers)
+    end
   end
 end
