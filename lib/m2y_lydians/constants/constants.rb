@@ -53,6 +53,7 @@ module M2yLydians
   REVERSE_DEBT_PATH = '/EstornarLancamento_37'
   BANK_LIST_PATH = '/IFsConsultar_37'
   CANCEL_SCHEDULED_TRANSACTION_PATH = '/ContaPgtoReprovar_37'
+  LIST_SCHEDULED_TRANSACTIONS = '/ContaPgtoAgenda_37'
 
   ### LIMITS ###
   LIST_PIX_LIMITS = '/ContaLimiteCons_37'

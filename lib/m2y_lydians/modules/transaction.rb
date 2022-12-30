@@ -38,5 +38,10 @@ module M2yLydians
     def self.cancel_transaction(body)
       post(base_url + BASE_ACCOUNT_PATH + CANCEL_SCHEDULED_TRANSACTION_PATH, parsed_body(body))
     end
+
+    # ContaPgtoAgenda_37
+    def self.list_scheduled_transactions(body)
+      post(base_url + BASE_ACCOUNT_PATH + LIST_SCHEDULED_TRANSACTIONS, parsed_body(body))
+    end
   end
 end
