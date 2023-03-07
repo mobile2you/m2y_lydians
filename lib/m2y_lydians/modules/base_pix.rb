@@ -1,12 +1,10 @@
 module M2yLydians
   class BasePix < Base
     def self.format_response(original_response)
-      binding.pry
       if original_response.to_s.include?('NroConta')
         account_num = original_response.to_s.gsub(/\r?\n/, "").split(',')
         account_num = account_num.select{ |line| line.include?('NroConta') }.first.split(':').last.strip
       end
-      binding.pry 
       original_response.body.force_encoding('UTF-8')
       response = original_response.parsed_response
 

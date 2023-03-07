@@ -56,7 +56,6 @@ module M2yLydians
     def self.format_response(original_response)
       original_response.body.force_encoding('UTF-8')
       response = original_response.parsed_response
-      binding.pry
       status_code = original_response.code
       if status_code.blank?
         # Erro 503 retorna um html em parsed_response
