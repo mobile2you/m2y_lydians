@@ -54,6 +54,10 @@ module M2yLydians
     end
 
     def self.format_response(original_response)
+      if original_response.to_s.include?('NroConta')
+        account_num = original_response.to_s.gsub(/\r?\n/, "").split(',')
+        account_num = account_num.select{ |line| line.include?('NroConta') }.first.split(':').last.strip
+      end
       original_response.body.force_encoding('UTF-8')
       response = original_response.parsed_response
 
@@ -71,6 +75,7 @@ module M2yLydians
 
       begin
         response[:original_request] = original_response.request.raw_body
+        response[:account_number] = account_num if account_num.present?
         response[:url] = original_response.request.uri
       rescue StandardError
         response[:original_request] = nil
