@@ -43,5 +43,10 @@ module M2yLydians
     def self.list_scheduled_transactions(body)
       post(base_url + BASE_ACCOUNT_PATH + LIST_SCHEDULED_TRANSACTIONS, parsed_body(body))
     end
+
+    # ContaPagamento_37
+    def self.status_transaction(body)
+      post(base_url + BASE_ACCOUNT_PATH + TRANSACTION_STATUS, parsed_body(body))
+    end
   end
 end

@@ -44,6 +44,7 @@ module M2yLydians
   ### Statement & receipts ###
   BANK_STATEMENT_PATH = '/ContaExtrato_37'
   RECEIPT_PATH = '/ContaExtratoDet_37'
+  TRANSACTION_STATUS = '/ContaPagamento_37'
 
   ### Transactions ###
   PERFORM_P2P_PATH = '/ContaPgtoTEF_37'
