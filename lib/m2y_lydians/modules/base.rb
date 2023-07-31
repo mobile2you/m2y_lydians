@@ -27,9 +27,9 @@ module M2yLydians
       # puts "Sending POST request to URL: #{url}"
       begin
         if M2yLydians.configuration.production?
-          response = HTTParty.post(url, headers: headers, body: body.to_json)
+          response = HTTParty.post(url, headers: headers, body: body.to_json, timeout: 30)
         else
-          response = HTTParty.post(url, headers: headers, body: body.to_json, debug_output: $stdout)
+          response = HTTParty.post(url, headers: headers, body: body.to_json, debug_output: $stdout, timeout: 30)
         end
       rescue Timeout::Error
         return timeout_response
